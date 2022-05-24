@@ -1,0 +1,43 @@
+body {
+  margin: 0%;
+}
+
+section {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 20% 70% 10%;
+}
+
+h1 {
+  grid-column: 1 / 3;
+  font-size: 60px;
+  padding-left: 50px;
+}
+
+.scores {
+  grid-area: 2 / 1 / 3 / 2;
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.score-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-placeholder {
+  border: 1px solid black;
+  padding: 2%;
+  margin-top: 3%;
+}
+
+form {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+footer {
+  grid-area: 3 / 1 / 4 / 3;
+  background-color: rgb(200, 200, 200);
+}
